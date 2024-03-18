@@ -23,3 +23,19 @@ print("Input Data Vector:", input_data)
 print("Reference Vector:", reference_vector)
 print("Hologram:", hologram)
 print("Correlation Result:", correlation_result)
+
+# Define input data and reference vectors
+input_data = np.array([1, 0, 1, 0])  # Example input data vector
+reference_vector = np.array([1, -1, 1, -1])  # Example reference vector
+
+# Simulate holographic encoding of input data
+hologram = holographic_encode(input_data, hologram_size=len(reference_vector))
+
+# Simulate holographic decoding (correlation) using reference vector
+correlation_result = holographic_decode(hologram, reference_vector)
+
+# Print the correlation result
+print("Input Data Vector:", input_data)
+print("Reference Vector:", reference_vector)
+print("Hologram:", hologram)
+print("Correlation Result:", correlation_result)
